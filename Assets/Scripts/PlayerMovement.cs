@@ -8,11 +8,15 @@ public class PlayerMovement : MonoBehaviour
     float moveSpeed=15f;
 
     //public CharacterController Player;
+    public Camera mainCamera;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(mainCamera == null)
+        {
+            mainCamera = GetComponentInChildren<Camera>();
+        }
     }
 
     // Update is called once per frame
@@ -33,13 +37,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Obstacle"))
+        if (mainCamera != null)
         {
-            if (gameObject.CompareTag("Player"))
-            {
-                Destroy(gameObject);
-            }
+            mainCamera.transform.SetParent(null); // Detach the camera to keep it active
+            mainCamera.gameObject.SetActive(true);
         }
+
+        // Deactivate the player
+        gameObject.SetActive(false);
     }
 
 

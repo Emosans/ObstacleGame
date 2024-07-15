@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF04C21A-8D47-6EFE-E36D-4AD13E0177B5}|Assembly-CSharp.csproj|C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF04C21A-8D47-6EFE-E36D-4AD13E0177B5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF04C21A-8D47-6EFE-E36D-4AD13E0177B5}|Assembly-CSharp.csproj|C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF04C21A-8D47-6EFE-E36D-4AD13E0177B5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF04C21A-8D47-6EFE-E36D-4AD13E0177B5}|Assembly-CSharp.csproj|c:\\users\\shrey\\onedrive\\desktop\\unity\\obstaclegame\\assets\\scripts\\spawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF04C21A-8D47-6EFE-E36D-4AD13E0177B5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Spawn.cs",
+              "DocumentMoniker": "C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\Assets\\Scripts\\Spawn.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spawn.cs",
+              "ToolTip": "C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\Assets\\Scripts\\Spawn.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spawn.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T07:39:21.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CameraFollow.cs",
+              "DocumentMoniker": "C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\Assets\\Scripts\\CameraFollow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
+              "ToolTip": "C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\Assets\\Scripts\\CameraFollow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraFollow.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T07:13:42.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAmwCsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T07:13:34.973Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
