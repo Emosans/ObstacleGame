@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     //public CharacterController Player;
     public Camera mainCamera;
+    public GameObject enemyCube;
 
     // Start is called before the first frame update
     void Start()
@@ -37,15 +38,31 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (mainCamera != null)
-        {
-            mainCamera.transform.SetParent(null); // Detach the camera to keep it active
-            mainCamera.gameObject.SetActive(true);
-        }
+        
 
         // Deactivate the player
-        gameObject.SetActive(false);
+        if (other.gameObject.CompareTag("Obstacle"))
+        {
+            
+            if (mainCamera != null)
+            {
+                mainCamera.transform.SetParent(null); // Detach the camera to keep it active
+                mainCamera.gameObject.SetActive(true);
+            }
+            Destroy(gameObject);
+        }
     }
 
+    void OnDestroy()
+    {
+        if(enemyCube != null)
+        {
+            PlayerFollow playerFollowScript = enemyCube.GetComponent<PlayerFollow>();
+            if(playerFollowScript != null)
+            {
+                playerFollowScript.stopFollowing();
+            }
+        }
+    }
 
 }

@@ -8,6 +8,7 @@ public class PlayerFollow : MonoBehaviour
     public GameObject Player;
 
     bool isFollowing = true;
+    bool isPlayerInRange = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,13 +18,30 @@ public class PlayerFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isFollowing && Player != null)
+        if (isPlayerInRange && isFollowing && Player != null)
         {
-            transform.position = Vector3.MoveTowards(this.transform.position, Player.transform.position, 5f * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(this.transform.position, Player.transform.position, 8f * Time.deltaTime);
         }
-        else
+        
+    }
+    public void stopFollowing()
+    {
+        isFollowing = false;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
         {
-            isFollowing = false;
+            isPlayerInRange = true;//player has entered the raidus
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            isPlayerInRange= false;//player is not in radius
         }
     }
 }
