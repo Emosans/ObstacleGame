@@ -9,9 +9,11 @@ public class PlayerMovement : MonoBehaviour
     float moveSpeed=15f;
     public float maxHealth = 100f;
     private float currentHealth;
+
     //public CharacterController Player;
     public Camera mainCamera;
     public GameObject enemyCube;
+    public HealthBar healthBar;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
         {
             mainCamera = GetComponentInChildren<Camera>();
         }
+
+        healthBar.setMaxHealth(maxHealth);
     }
 
     // Update is called once per frame
@@ -43,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
         if(maxHealth > 0)
         {
             maxHealth -= 10;
+            healthBar.setHealth(maxHealth);
             Debug.Log(maxHealth);
         }
         if(maxHealth <= 0)
@@ -56,6 +61,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+
+
     private void OnTriggerEnter(Collider other)
     {       
         // Deactivate the player
@@ -67,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
                 mainCamera.transform.SetParent(null); // Detach the camera to keep it active
                 mainCamera.gameObject.SetActive(true);
             }
+            healthBar.setHealth(0f);
             Destroy(gameObject);
         }
     }
