@@ -9,10 +9,17 @@ public class PlayerFollow : MonoBehaviour
 
     bool isFollowing = true;
     bool isPlayerInRange = false;
+
+    public Vector3 initialDetectionSize = new Vector3(5, 1, 6);
+    public Vector3 newDetectionSize = new Vector3(7, 1, 8);
+    public BoxCollider detectionRadius;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(detectionRadius != null)
+        {
+            detectionRadius.size = initialDetectionSize;
+        }
     }
 
     // Update is called once per frame
@@ -20,9 +27,13 @@ public class PlayerFollow : MonoBehaviour
     {
         if (isPlayerInRange && isFollowing && Player != null)
         {
+            detectionRadius.size = newDetectionSize;
             transform.position = Vector3.MoveTowards(this.transform.position, Player.transform.position, 8f * Time.deltaTime);
         }
-        
+        else
+        {
+            detectionRadius.size = initialDetectionSize;
+        }
     }
     public void stopFollowing()
     {
@@ -42,6 +53,14 @@ public class PlayerFollow : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             isPlayerInRange= false;//player is not in radius
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Player.GetComponent<PlayerMovement>().PlayerDamage();
         }
     }
 }

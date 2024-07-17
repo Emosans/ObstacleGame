@@ -1,3 +1,4 @@
+using System;
 using Unity.AI.Navigation;
 using UnityEngine;
 using UnityEngine.AI;
@@ -6,7 +7,8 @@ public class PlayerMovement : MonoBehaviour
     float moveX;
     float moveZ;
     float moveSpeed=15f;
-
+    public float maxHealth = 100f;
+    private float currentHealth;
     //public CharacterController Player;
     public Camera mainCamera;
     public GameObject enemyCube;
@@ -36,10 +38,26 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(move * moveSpeed * Time.deltaTime);
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void PlayerDamage()
     {
-        
+        if(maxHealth > 0)
+        {
+            maxHealth -= 10;
+            Debug.Log(maxHealth);
+        }
+        if(maxHealth <= 0)
+        {
+            if (mainCamera != null)
+            {
+                mainCamera.transform.SetParent(null); // Detach the camera to keep it active
+                mainCamera.gameObject.SetActive(true);
+            }
+            Destroy(gameObject);
+        }
+    }
 
+    private void OnTriggerEnter(Collider other)
+    {       
         // Deactivate the player
         if (other.gameObject.CompareTag("Obstacle"))
         {

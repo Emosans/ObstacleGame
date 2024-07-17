@@ -566,6 +566,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 495447316}
+  initialDetectionSize: {x: 5, y: 1, z: 6}
+  newDetectionSize: {x: 7, y: 1, z: 8}
+  detectionRadius: {fileID: 371136310}
 --- !u!54 &371136309
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -810,8 +813,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.1282043, y: 1, z: 1.1983337}
+  m_Center: {x: 0.06410217, y: 0, z: 0.09916687}
 --- !u!23 &495447319
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -890,6 +893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7850fc28f1de7cf4aa2cd9cae997ddd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
   mainCamera: {fileID: 341793237}
   enemyCube: {fileID: 371136307}
 --- !u!1 &514087704
