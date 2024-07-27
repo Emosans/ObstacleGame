@@ -362,6 +362,7 @@
 "Assets/Scripts/HealthBar.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerFollow.cs"
+"Assets/Scripts/PowerUp.cs"
 "Assets/Scripts/Spawn.cs"
 -langversion:9.0
 

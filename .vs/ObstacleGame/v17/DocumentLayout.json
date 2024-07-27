@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FF04C21A-8D47-6EFE-E36D-4AD13E0177B5}|Assembly-CSharp.csproj|c:\\users\\shrey\\onedrive\\desktop\\unity\\obstaclegame\\assets\\scripts\\powerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF04C21A-8D47-6EFE-E36D-4AD13E0177B5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\powerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FF04C21A-8D47-6EFE-E36D-4AD13E0177B5}|Assembly-CSharp.csproj|c:\\users\\shrey\\onedrive\\desktop\\unity\\obstaclegame\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF04C21A-8D47-6EFE-E36D-4AD13E0177B5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,32 +31,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PowerUp.cs",
+              "DocumentMoniker": "C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\Assets\\Scripts\\PowerUp.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PowerUp.cs",
+              "ToolTip": "C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\Assets\\Scripts\\PowerUp.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PowerUp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T06:41:34.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\Assets\\Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
               "ToolTip": "C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\Assets\\Scripts\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-17T12:03:08.686Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HealthBar.cs",
               "DocumentMoniker": "C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\Assets\\Scripts\\HealthBar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HealthBar.cs",
               "ToolTip": "C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\Assets\\Scripts\\HealthBar.cs",
               "RelativeToolTip": "Assets\\Scripts\\HealthBar.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAfAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T11:52:08.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-17T11:52:08.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PlayerFollow.cs",
               "DocumentMoniker": "C:\\Users\\shrey\\OneDrive\\Desktop\\Unity\\ObstacleGame\\Assets\\Scripts\\PlayerFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerFollow.cs",
@@ -60,8 +76,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerFollow.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAQwDcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T12:50:16.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-15T12:50:16.099Z"
             }
           ]
         }

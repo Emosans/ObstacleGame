@@ -68,7 +68,6 @@ public class PlayerMovement : MonoBehaviour
         // Deactivate the player
         if (other.gameObject.CompareTag("Obstacle"))
         {
-            
             if (mainCamera != null)
             {
                 mainCamera.transform.SetParent(null); // Detach the camera to keep it active
